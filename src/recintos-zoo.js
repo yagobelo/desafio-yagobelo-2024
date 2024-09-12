@@ -3,7 +3,6 @@ import { recintos, animais } from "./data.js";
 class RecintosZoo {
   analisaRecintos(animal, quantidade) {
     const animalM = animal.toLocaleUpperCase("pt-br");
-
     const especieValida = animais.find((a) => a.especie === animalM);
 
     if (!especieValida) {
@@ -289,8 +288,5 @@ class RecintosZoo {
     }
   }
 }
-
-const teste = new RecintosZoo().analisaRecintos("macaco", 2);
-console.log(teste);
 
 export { RecintosZoo as RecintosZoo };
